@@ -7,51 +7,50 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    font-size: 16px;
-    /* cursor: none; */
+    font-size: 12px;
+}
+@media screen and (min-width: 400px){
+    body{
+        font-size: 16px;
+    }
 }
 
 .name{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    line-height: 60px;
-    letter-spacing: -6px;
+    line-height: 38px;
+    letter-spacing: -2px;
     text-align: center;
-    width: 375px;
+    font-family: arial;
+    font-weight: 1000;
+    color: #eee;
+    font-size: 5em;
+    position: relative;
+}
+@media screen and (min-width: 400px){
+    .name{
+        letter-spacing: -6px;
+        line-height: 60px;
+    }
 }
  .slogan{
     color: #ddd;
     font-family: arial;
     font-weight: 600;
     font-size: 12px;
-    letter-spacing: 6.8px;
+    letter-spacing: 2.4px;
     word-spacing: 5px;
     margin-top: 5px;
     margin-left: 30px;
-    text-align: center;
-
+    text-align: justify;
     opacity: 0;
     transform: translateY(10px);
 }
-/*
-button{
-    color: #eee;
-    margin-top: 20px;
-    background: none;
-    border: none;
-    opacity: 0;
-    transform: translateY(10px);
-    cursor: none;
-    outline: none;
-} */
-
-.name{
-    font-family: arial;
-    font-weight: 1000;
-    color: #eee;
-    font-size: 5em;
-    position: relative;
+@media screen and (min-width: 400px){
+    .slogan{
+        letter-spacing: 6.8px;
+    }
 }
 #perturbator{
     width: 20px;
